@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pelyceum.Android", "Pelyceum\Pelyceum.Android\Pelyceum.Android.csproj", "{AD639748-3738-40F7-9D0D-4E11F2B44A5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pelyceum", "Pelyceum\Pelyceum\Pelyceum.csproj", "{77362347-0DFD-48DA-9994-73AB828A28CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pelyceum", "Pelyceum\Pelyceum\Pelyceum.csproj", "{77362347-0DFD-48DA-9994-73AB828A28CA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pelyceum.UnitTests", "Pelyceum\Pelyceum.UnitTests\Pelyceum.UnitTests.csproj", "{50B8DDB9-FDBB-4272-AF75-B02F9B022A5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{77362347-0DFD-48DA-9994-73AB828A28CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77362347-0DFD-48DA-9994-73AB828A28CA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{77362347-0DFD-48DA-9994-73AB828A28CA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{50B8DDB9-FDBB-4272-AF75-B02F9B022A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50B8DDB9-FDBB-4272-AF75-B02F9B022A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50B8DDB9-FDBB-4272-AF75-B02F9B022A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50B8DDB9-FDBB-4272-AF75-B02F9B022A5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
