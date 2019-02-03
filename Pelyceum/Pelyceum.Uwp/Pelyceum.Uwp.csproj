@@ -7,7 +7,7 @@
     <ProjectGuid>{C50185B5-1CB6-4E0C-B890-F9CBA41CEF0F}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Pelyceum.Uwp</RootNamespace>
+    <RootNamespace>Pelyceum</RootNamespace>
     <AssemblyName>Pelyceum.Uwp</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
