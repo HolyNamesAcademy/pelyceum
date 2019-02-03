@@ -8,7 +8,8 @@ namespace Pelyceum.UnitTests
         [Fact]
         public void Test1()
         {
-
+            //prompt appears
+            //user imput
         }
     }
 }
