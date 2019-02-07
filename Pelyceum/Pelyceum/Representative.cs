@@ -14,24 +14,32 @@ namespace Pelyceum
             college = entcollege;
         }
 
-        public void RepIntro()
-        {
-           //skip security for now
-           
-            //if (college matches from list)
-            //contact admin for permissions
-            //if given, continue, if not kick back to start
-        }
-
         public void RepEdit()
         {
-            //if it exists, edit
-            //if not, facilitate creation
-            
+           //skip security for now
+
+            if (collegeList.ContainsKey(Representative.name))
+                {
+                //allow edits
+                }
+            else
+                {
+                //create
+
+                //collegeList.add(
+                }
+
+           
+            //if (college matches from list)
+            //if known, allow editing
+            //if not, create
+
             //print their college info
             //Name: ble, Email: ble, phone: ble, etc.
             //give them editing rights - name area (name, email, phone, etc.)
         }
+
+        
         //verification w/ admins
         //if college unrecognized, check spelling & completeness or contact admins
         //give creation ability

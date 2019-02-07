@@ -7,15 +7,15 @@ namespace Pelyceum
     class College
     {
         public string name;
-        public string loc;
-        public string mail;
-        public string phone;
-        public string site;
+        //public string loc;
+        //public string mail;
+        //public string phone;
+        //public string site;
         //list? majors;
         public int avtuit;
         //list? scholarships
         //list? deadlines
-        public Boolean comapp;
+        //public Boolean comapp;
 
 
         public College(string entname, int entuit)
@@ -24,6 +24,15 @@ namespace Pelyceum
             avtuit = entuit;
         }
 
+        public void makeCollege(string entname, int entuit)
+        {
+            College newCollege = new College(entname, entuit);
+            collegeList.Add(entname, newCollege);
+        }
+
+        //editing methods
+        //search function
+        //match function
 
 
         IDictionary<string, College> collegeList = new Dictionary<string, College>();
