@@ -30,6 +30,19 @@ namespace Pelyceum
             collegeList.Add(entname, newCollege);
         }
 
+        public void switchTuit(string college, int newtuit)
+        {
+            collegeList[college].avtuit = newtuit;
+        }
+
+        public string showCollege(string key)
+        {
+            //print college[key].name
+            //print college[key].avtuit
+        }
+
+        
+        
         //editing methods
         //search function
         //match function

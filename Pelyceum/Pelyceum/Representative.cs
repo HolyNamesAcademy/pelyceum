@@ -6,27 +6,26 @@ namespace Pelyceum
 {
     public class Representative : Profile
     {
-        public string college;
 
-        public Representative(string entname, string entcollege)
+        public Representative(string entname, College entcollege)
         {
             name = entname;
             college = entcollege;
         }
 
+        //this goes in view model
         public void RepEdit()
         {
            //skip security for now
 
-            if (collegeList.ContainsKey(Representative.name))
+            if (collegeList.ContainsKey(Representative.college))
                 {
                 //allow edits
                 }
             else
                 {
-                //create
-
-                //collegeList.add(
+                    collegeList.makeCollege(Representative.college, int entuit);
+                //have them enter tuition
                 }
 
            
@@ -47,3 +46,5 @@ namespace Pelyceum
 }
 //StringReader strReader = new StringReader(textReaderText)
 //how to differentiate between users - booleans? strings?
+
+    //work sign in function - choose profile???
