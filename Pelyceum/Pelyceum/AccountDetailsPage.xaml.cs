@@ -20,9 +20,13 @@ namespace Pelyceum
     /// </summary>
     public sealed partial class AccountDetailsPage : Page
     {
+        public Student CurrentProfile;
+
         public AccountDetailsPage()
         {
             this.InitializeComponent();
+
+            this.CurrentProfile = new Student("Stu Dent", 18, "O'Dea");
         }
     }
 }

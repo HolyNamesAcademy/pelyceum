@@ -8,7 +8,12 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <TextBlock>This is the account details page.</TextBlock>
-    </Grid>
+    <StackPanel>
+        <TextBlock Text="{x:Bind CurrentProfile.name}"/>
+        <TextBlock Text="Student" />
+        <TextBlock Text="{x:Bind CurrentProfile.age}"/>
+        <TextBlock Text="{x:Bind CurrentProfile.highschool}"/>
+    </StackPanel>
+
+
 </Page>

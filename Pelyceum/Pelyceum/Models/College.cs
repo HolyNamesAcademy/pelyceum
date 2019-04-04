@@ -4,18 +4,18 @@ using System.Text;
 
 namespace Pelyceum
 {
-    class College
+    public class College
     {
         public string name;
-        public string loc;
-        public string mail;
-        public string phone;
-        public string site;
+        //public string loc;
+        //public string mail;
+        //public string phone;
+        //public string site;
         //list? majors;
         public int avtuit;
         //list? scholarships
         //list? deadlines
-        public Boolean comapp;
+        //public Boolean comapp;
 
 
         public College(string entname, int entuit)
@@ -24,6 +24,19 @@ namespace Pelyceum
             avtuit = entuit;
         }
 
+        //public College search(string term)
+        //{
+        //    public College find = null;
+        //    for (int i = 1; i <= collegeList.size(); i++)
+        //    {
+        //        //(return match)
+        //    }
+        //    if (find = null)
+        //        {//make new
+        //    }
+        //}
+
+        
 
 
         IDictionary<string, College> collegeList = new Dictionary<string, College>();

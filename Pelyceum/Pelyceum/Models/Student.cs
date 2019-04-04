@@ -4,22 +4,30 @@ using System.Text;
 
 namespace Pelyceum
 {
-    class Student
+    public class Student
     {
-        String name;
-        int age;
-        String major;
-        String highschool;
-        double GPA;
-        int SAT;
+        public String name;
+        public int age;
+        //add birth date?
+        public String major;
+        public String highschool;
+        public double GPA;
+        public int SAT;
         //insert other if answer = 0
-        int ACT;
-        String IntendedSemesterStart;
-        String athletics;
-        int income;
-        int numOfJobs;
-        String gender;
+        public int ACT;
+        public String IntendedSemesterStart;
+        public String athletics;
+        public int income;
+        public int numOfJobs;
+        public String gender;
         String Password;
+
+        public Student(string name, int age, string highschool)
+        {
+            this.name = name;
+            this.age = age;
+            this.highschool = highschool;
+        }
 
         public Student(string name, int age, int numOfJobs, string major, string highschool, double GPA, int SAT, int ACT, string IntendedSemesterStart, int income, string gender)
         {
@@ -33,7 +41,7 @@ namespace Pelyceum
             this.ACT = ACT;
             this.IntendedSemesterStart = IntendedSemesterStart;
             this.income = income;
-            this.gender = gender; 
+            this.gender = gender;
 
 
         }

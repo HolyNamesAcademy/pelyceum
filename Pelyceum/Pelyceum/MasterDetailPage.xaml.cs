@@ -36,6 +36,22 @@ namespace Pelyceum
             var tag = (string)selectedItem.Tag;
             var typeName = $"{DefaultNamespace}.{tag}";
             var pageType = Type.GetType(typeName);
+            if (tag.Equals("AccountDetails"))
+            {
+                if (StoredProfile.CurrentProfile == null)
+                {
+                    pageType = typeof(AccountCreation);
+                }
+                else
+                {
+                    pageType = typeof(AccountDetailsPage);
+                }
+                //go to display, pageType = typeof(*name of class*)
+                //else
+                //go to create, pageType = typeof(*name of class*)
+            }
+            //else ???
+            
 
             this.contentFrame.Navigate(pageType);
             this.navigationView.IsBackEnabled = true;
