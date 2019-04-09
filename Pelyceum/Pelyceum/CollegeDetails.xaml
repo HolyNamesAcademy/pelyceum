@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="Pelyceum.CollegeDetails"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Pelyceum"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+        <TextBlock Text="College Name: "/>
+        <TextBlock Text="{x:Bind firstCollege.name}"/>
+        <TextBlock Text="College location: "/>
+        <TextBlock Text="{x:Bind firstCollege.loc}"/>
+        <TextBlock Text="College Phone: "/>
+        <TextBlock Text="{x:Bind firstCollege.phone}"/>
+        <TextBlock Text="College average tuition: "/>
+        <TextBlock Text="{x:Bind firstCollege.avtuit}"/>
+        <TextBlock Text="College email: "/>
+        <TextBlock Text="{x:Bind firstCollege.mail}"/>
+        <TextBlock Text="College website: "/>
+        <TextBlock Text="{x:Bind firstCollege.site}"/>
+        <TextBlock Text="College common app filled out: "/>
+        <TextBlock Text="{x:Bind firstCollege.comapp}"/>
+        <TextBox x:Name= "CollegeTextBox" PlaceholderText="College"/>
+    </StackPanel>
+</Page>

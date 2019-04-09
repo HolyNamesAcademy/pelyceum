@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Pelyceum
 {
-    class College
+    public class College
     {
         public string name;
         public string loc;
@@ -20,8 +20,8 @@ namespace Pelyceum
 
         public College(string entname, int entuit)
         {
-            name = entname;
-            avtuit = entuit;
+            this.name = entname;
+            this.avtuit = entuit;
         }
 
 
