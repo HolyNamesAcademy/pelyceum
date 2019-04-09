@@ -22,9 +22,21 @@ namespace Pelyceum
     /// </summary>
     public sealed partial class CollegeDetails : Page
     {
+        public College firstCollege;
+
         public CollegeDetails()
         {
             this.InitializeComponent();
+
+            this.firstCollege = new College("Fornell's Univeristy", 360000)
+            {
+                loc = "Virginia",
+                phone = "617-845-9204",
+                avtuit = 560000,
+                mail = "admissions@fornellu.com",
+                site = "www.fornellU.org",
+                comapp = false
+            };
         }
     }
 }

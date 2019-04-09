@@ -8,7 +8,21 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-
-    </Grid>
+    <StackPanel>
+        <TextBlock Text="College Name: "/>
+        <TextBlock Text="{x:Bind firstCollege.name}"/>
+        <TextBlock Text="College location: "/>
+        <TextBlock Text="{x:Bind firstCollege.loc}"/>
+        <TextBlock Text="College Phone: "/>
+        <TextBlock Text="{x:Bind firstCollege.phone}"/>
+        <TextBlock Text="College average tuition: "/>
+        <TextBlock Text="{x:Bind firstCollege.avtuit}"/>
+        <TextBlock Text="College email: "/>
+        <TextBlock Text="{x:Bind firstCollege.mail}"/>
+        <TextBlock Text="College website: "/>
+        <TextBlock Text="{x:Bind firstCollege.site}"/>
+        <TextBlock Text="College common app filled out: "/>
+        <TextBlock Text="{x:Bind firstCollege.comapp}"/>
+        <TextBox x:Name= "CollegeTextBox" PlaceholderText="College"/>
+    </StackPanel>
 </Page>
