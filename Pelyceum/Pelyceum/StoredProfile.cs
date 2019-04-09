@@ -8,6 +8,8 @@ namespace Pelyceum
 {
     public class StoredProfile
     {
-        public static Student CurrentProfile = new Student("Stu Dent", 18, "O'Dea");
+        public static Student CurrentProfile;
+            /* = new Student("Stu Dent", 18, "O'Dea")*/
     }
+
 }

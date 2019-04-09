@@ -22,6 +22,13 @@ namespace Pelyceum
         public String gender;
         String Password;
 
+        public Student()
+        {
+            this.name = null;
+            this.age = 0;
+            this.highschool = null;
+        }
+
         public Student(string name, int age, string highschool)
         {
             this.name = name;

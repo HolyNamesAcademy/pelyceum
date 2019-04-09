@@ -26,7 +26,7 @@ namespace Pelyceum
         {
             this.InitializeComponent();
 
-            this.CurrentProfile = new Student("Stu Dent", 18, "O'Dea");
+            this.CurrentProfile = StoredProfile.CurrentProfile;
         }
     }
 }

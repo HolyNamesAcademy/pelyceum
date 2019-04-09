@@ -27,26 +27,44 @@ namespace Pelyceum
         public AccountCreation()
         {
             this.InitializeComponent();
-
-            this.CurrentProfile = new Student("Stu Dent", 18, "O'Dea");
         }
 
-        private async void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var dialog = new ContentDialog()
-            {
-                Content = namebox.Text,
-                ///how do with others???
-                PrimaryButtonText = "Close"
-            };
-
+            CurrentProfile = new Student();
             this.CurrentProfile.name = namebox.Text;
             this.CurrentProfile.SetAge(int.Parse(agebox.Text));
-            //int.parse, take string, convert to number, try parse
             this.CurrentProfile.highschool = schoolbox.Text;
-
-            await dialog.ShowAsync();
+            StoredProfile.CurrentProfile = this.CurrentProfile;
+            this.Frame.Navigate(typeof(AccountDetailsPage)); 
         }
+
+        //private void SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
+        //{
+        //    var selectedItem = (NavigationViewItem)args.SelectedItem;
+        //    var tag = (string)selectedItem.Tag;
+        //    var typeName = $"{DefaultNamespace}.{tag}";
+        //    var pageType = Type.GetType(typeName);
+        //    if (tag.Equals("AccountDetails"))
+        //    {
+        //        if (StoredProfile.CurrentProfile == null)
+        //        {
+        //            pageType = typeof(AccountCreation);
+        //        }
+        //        else
+        //        {
+        //            pageType = typeof(AccountDetailsPage);
+        //        }
+        //        //go to display, pageType = typeof(*name of class*)
+        //        //else
+        //        //go to create, pageType = typeof(*name of class*)
+        //    }
+        //    //else ???
+
+
+        //    this.contentFrame.Navigate(pageType);
+        //    this.navigationView.IsBackEnabled = true;
+        //}
     }
 }
 
