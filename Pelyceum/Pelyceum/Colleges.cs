@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Pelyceum
 {
-    class Colleges
+    public class Colleges
     {
-       static void Main(string[] args)
+        static void Main(string[] args)
         {
             System.Collections.ArrayList CollegeList = new System.Collections.ArrayList();
             CollegeList.Add("University of Wahsington");
@@ -30,9 +30,15 @@ namespace Pelyceum
             CollegeList.Add("California State Polytechnic Institute");
 
         }
-
-
-
-
+        Scanner reader = new Scanner(System.in);
+        public String Search(String CollegeList; String reader)
+        {
+                for(int j=0; j <= CollegeList.ArrayList.size; j++)
+                {
+                    if(CollegeList(j).equals(reader))
+                        return j;
+                }
+                return "College Not Found";
+        }
     }
 }

@@ -4,12 +4,12 @@ using System.Text;
 
 namespace Pelyceum
 {
-    class Student
+    public class Student
     {
-        String name;
-        int age;
+        public String name;
+        public int age;
         String major;
-        String highschool;
+        public String highschool;
         double GPA;
         int SAT;
         //insert other if answer = 0
@@ -20,6 +20,13 @@ namespace Pelyceum
         int numOfJobs;
         String gender;
         String Password;
+
+        public Student(string name, int age, string highschool)
+        {
+            this.name = name;
+            this.age = age;
+            this.highschool = highschool;
+        }
 
         public Student(string name, int age, int numOfJobs, string major, string highschool, double GPA, int SAT, int ACT, string IntendedSemesterStart, int income, string gender)
         {

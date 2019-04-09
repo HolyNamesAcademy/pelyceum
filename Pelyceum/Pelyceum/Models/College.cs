@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Pelyceum
 {
-    class College
+    public class College
     {
         public string name;
         public string loc;
@@ -18,10 +18,10 @@ namespace Pelyceum
         public Boolean comapp;
 
 
-        public College(string entname, int entuit)
+        public College(string entname, string location)
         {
             name = entname;
-            avtuit = entuit;
+            loc = location;
         }
 
 

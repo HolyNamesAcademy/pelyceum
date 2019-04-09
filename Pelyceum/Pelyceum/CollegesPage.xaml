@@ -8,7 +8,26 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <TextBlock>This is the colleges page.</TextBlock>
-    </Grid>
+   
+    <StackPanel>
+    <ListView ItemsSource="{x:Bind Colleges}" ItemClick="ListView_ItemClick" IsItemClickEnabled="True" SelectionMode="None">
+            <ListView.Header>
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Search: "/>
+                    <TextBox x:Name ="SearchTextBox" PlaceholderText="Enter the Full College Name"/>
+                    </StackPanel>
+                    <Button Content= "Click to see the Magic" Click="SearchButton"/>
+                </StackPanel>
+            </ListView.Header>
+        <ListView.ItemTemplate>
+                <DataTemplate x:DataType="local:College">
+                    <StackPanel>
+                        <TextBlock Text="{x:Bind name}"/>
+                        <TextBlock Text="{x:Bind loc}"/>
+                    </StackPanel>
+                </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+    </StackPanel>
 </Page>
