@@ -21,7 +21,7 @@ namespace Pelyceum
             //skip security for now
 
             //emp = College.search(name);
-                if (emp == null)
+                //if (emp == null)
             {
                 //(make college);
             }

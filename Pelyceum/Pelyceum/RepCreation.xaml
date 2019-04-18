@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="Pelyceum.AccountCreation"
+    x:Class="Pelyceum.RepCreation"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Pelyceum"
@@ -8,20 +8,15 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-
     <StackPanel>
-        <TextBlock Text="   Create Student Profile" />
-            <StackPanel Orientation="Horizontal">
+        <TextBlock Text="   Create Representative Profile" />
+        <StackPanel Orientation="Horizontal">
             <TextBlock Text="   Name: "/>
             <TextBox x:Name="namebox" PlaceholderText="your full legal name"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal">
-            <TextBlock Text="   Age: "/>
-            <TextBox x:Name="agebox" PlaceholderText="your current age"/>
-        </StackPanel>
-        <StackPanel Orientation="Horizontal">
-            <TextBlock Text="   High School: "/>
-            <TextBox x:Name="schoolbox" PlaceholderText="the school you have graduated/will graduate from"/>
+            <TextBlock Text="   College: "/>
+            <TextBox x:Name="schoolbox" PlaceholderText="your current employer"/>
         </StackPanel>
         <Button Content="Enter" Click="Button_Click"/>
     </StackPanel>

@@ -40,7 +40,7 @@ namespace Pelyceum
             {
                 if (StoredProfile.CurrentProfile == null)
                 {
-                    pageType = typeof(AccountCreation);
+                    pageType = typeof(AccountChoice);
                 }
                 else
                 {
