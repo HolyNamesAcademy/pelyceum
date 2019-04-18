@@ -7,17 +7,25 @@ namespace Pelyceum
     public class Representative : Profile
     {
         public string college;
+        public College emp;
 
         public Representative(string entname, string entcollege)
         {
             name = entname;
             college = entcollege;
+            emp = null;
         }
 
         public void RepIntro()
         {
-           //skip security for now
-           
+            //skip security for now
+
+            //emp = College.search(name);
+                //if (emp == null)
+            {
+                //(make college);
+            }
+            
             //if (college matches from list)
             //contact admin for permissions
             //if given, continue, if not kick back to start

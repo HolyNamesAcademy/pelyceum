@@ -13,7 +13,7 @@
                     SelectionChanged="SelectionChanged"
                     BackRequested="BackRequested">
         <NavigationView.MenuItems>
-            <NavigationViewItem Icon="Contact" Content="My Profile" Tag="AccountDetailsPage" />
+            <NavigationViewItem Icon="Contact" Content="My Profile" Tag="AccountDetails" />
             <NavigationViewItem Icon="Street" Content="Colleges" Tag="CollegesPage" />
         </NavigationView.MenuItems>
         <Frame x:Name="contentFrame"/>

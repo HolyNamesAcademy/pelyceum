@@ -116,6 +116,21 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AccountChoice.xaml.cs">
+      <DependentUpon>AccountChoice.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AlumCreation.xaml.cs">
+      <DependentUpon>AlumCreation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CounselorCreation.xaml.cs">
+      <DependentUpon>CounselorCreation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RepCreation.xaml.cs">
+      <DependentUpon>RepCreation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StudentCreation.xaml.cs">
+      <DependentUpon>StudentCreation.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CollegesPage.xaml.cs">
       <DependentUpon>CollegesPage.xaml</DependentUpon>
     </Compile>
@@ -137,6 +152,7 @@
     <Compile Include="AccountDetailsPage.xaml.cs">
       <DependentUpon>AccountDetailsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="StoredProfile.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -159,6 +175,26 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="AccountChoice.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AlumCreation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CounselorCreation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RepCreation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StudentCreation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CollegesPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

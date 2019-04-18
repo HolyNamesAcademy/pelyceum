@@ -13,20 +13,27 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
+
 namespace Pelyceum
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class AccountDetailsPage : Page
+    public sealed partial class AlumCreation : Page
     {
-        public Student CurrentProfile;
-
-        public AccountDetailsPage()
+        public AlumCreation()
         {
             this.InitializeComponent();
-
-            this.CurrentProfile = StoredProfile.CurrentProfile;
+        }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            //CurrentProfile = new Counselor();
+            //this.CurrentProfile.name = namebox.Text;
+            //this.CurrentProfile.SetAge(int.Parse(agebox.Text));
+            //this.CurrentProfile.highschool = schoolbox.Text;
+            //StoredProfile.CurrentProfile = this.CurrentProfile;
+            //this.Frame.Navigate(typeof(AccountDetailsPage));
         }
     }
 }

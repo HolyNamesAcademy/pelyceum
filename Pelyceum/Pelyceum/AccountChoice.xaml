@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="Pelyceum.AccountDetailsPage"
+    x:Class="Pelyceum.AccountChoice"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Pelyceum"
@@ -9,11 +9,11 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <StackPanel>
-        <TextBlock Text="{x:Bind CurrentProfile.name}"/>
-        <TextBlock Text="Student" />
-        <TextBlock Text="{x:Bind CurrentProfile.age}"/>
-        <TextBlock Text="{x:Bind CurrentProfile.highschool}"/>
-    </StackPanel>
-
-
+        <TextBlock Text="   Crete your Profile" />
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="   Select Profile Type:  "/>
+            <TextBox x:Name="filebox" PlaceholderText="Student, Counselor, Representative, Alumnus"/>
+            <Button Content="Create" Click="Button_Click"/>
+            </StackPanel>
+        </StackPanel>
 </Page>
